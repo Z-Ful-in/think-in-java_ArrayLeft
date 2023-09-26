@@ -1,14 +1,14 @@
 package util;
 import java.util.*;
-public class CollectionData<T> {
-    private ArrayList<T> list;
-    public CollectionData(Generator<T> gen, int quantity) {
-        list = new ArrayList<T>();
-        for (int i = 0; i < quantity; i++) {
-            list.add(gen.next());
+public class CollectionData<T> extends ArrayList<T> {
+    public CollectionData(Generator<T>gen,int quantity){
+        for(int i=0;i<quantity;i++){
+            add(gen.next());
         }
     }
-    public T[] toArray(T[] a) {
-        return list.toArray(a);
+    // a generic convenience method:
+    public static<T> CollectionData<T>
+    list(Generator<T>gen,int quantity){
+        return new CollectionData<>(gen,quantity);
     }
 }

@@ -17,7 +17,7 @@ public class CountingGenerator {
     static char[] chars=("abcdefghijklmnopqrstuvwxyz"+
             "ABCDEFGHIJKLMNOPQRSTUVWXYZ").toCharArray();
     public static class
-    Charactor implements Generator<java.lang.Character>{
+    Character implements Generator<java.lang.Character>{
         int index=-1;
         public java.lang.Character next(){
             index=(index+1)% chars.length;
@@ -27,7 +27,7 @@ public class CountingGenerator {
     public static class
     String implements Generator<java.lang.String>{
         private int length=7;
-        Generator<java.lang.Character> cg=new Charactor();
+        Generator<java.lang.Character> cg=new Character();
         public String(){}
         public String(int length){ this.length=length; }
         public java.lang.String next() {
