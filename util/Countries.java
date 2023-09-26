@@ -3,8 +3,38 @@ import java.util.*;
 public class Countries {
     public static final String[][] DATA={
             // Africa
-            {"ALGERIA","Algiers"}
-            //....
+            {"ALGERIA","Algiers"},{"ANGOLA","Luanda"},
+            {"BENIN","Porto-Novo"},{"BOTSWANA","Gaberone"},
+            {"BURKINA FASO","Ouagadougou"},
+            {"BURUNDI","Bujumbura"},
+            {"CAMEROON","Yaounde"},{"CAPE VERDE","Praia"},
+            {"CENTRAL AFRICAN REPUBLIC","Bangui"},
+            {"CHAD","N'djamena"},{"COMOROS","Moroni"},
+            {"CONGO","Brazzaville"},{"DJIBOUTI","Dijibouti"},
+            {"EGYPT","Cairo"},{"EQUATORIAL GUINEA","Malabo"},
+            {"ERITREA","Asmara"},{"ETHIOPIA","Addis Ababa"},
+            {"GABON","Libreville"},{"THE GAMBIA","Banjul"},
+            {"GHANA","Accra"},{"GUINEA","Conakry"},
+            {"BISSAU","Bissau"},
+            {"COTE D'IVOIR (IVORY COAST)","Yamoussoukro"},
+            {"KENYA","Nairobi"},{"LESOTHO","Maseru"},
+            {"LIBERIA","Monrovia"},{"LIBYA","Tripoli"},
+            {"MADAGASCAR","Antananarivo"},{"MALAWI","Lilongwe"},
+            {"MALI","Bamako"},{"MAURITANIA","Nouakchott"},
+            {"MAURITIUS","Port Louis"},{"MOROCCO","Rabat"},
+            {"MOZAMBIQUE","Maputo"},{"NAMIBIA","Windhoek"},
+            {"NIGER","Niamey"},{"NIGERIA","Abuja"},
+            {"RWANDA","Kigali"},
+            {"SAO TOME E PRINCIPE","Sao Tome"},
+            {"SENEGAL","Dakar"},{"SEYCHELLES","Victoria"},
+            {"SIERRA LEONE","Freetown"},
+            {"SOMALIA","Mogadishu"},{"SOUTH AFRICA","Pretoria/Cape Town"},
+            {"SUDAN","Khartoum"},{"SWAZILAND","Mbabane"},
+            {"TANZANIA","Dodoma"},{"TOGO","Lome"},
+            {"TUNISIA","Tunis"},{"UGANDA","Kampala"},
+            {"DEMOCRATIC REPUBLIC OF THE CONGO (ZAIRE)","Kinshasa"},
+            {"ZAMBIA","Lusaka"},{"ZIMBABWE","Harare"},
+            //...
     };
     //Use AbstractMap by implementing entrySet()
     private static class FlyweightMap
